@@ -73,7 +73,6 @@ section.screen1{
     font-size: 55px;
     line-height: 105%;
     margin: 0 auto;
-
     /* or 58px */
     text-align: center;
     letter-spacing: 0.015em;
@@ -198,11 +197,11 @@ section.screen1{
 	text-transform: uppercase;
 	color: #252423;
     margin: 0px auto;
-    margin-bottom: 50px;
 }
 .cars_in_db{
     background: #FFDD2E;
     height: 730px;
+    margin-top: 50px;
 }
 .cars_in_db .title{
     font-family: RotondaCBold;
@@ -214,27 +213,6 @@ section.screen1{
     letter-spacing: 0.015em;
     text-transform: uppercase;
     color: #252423;
-}
-.cards {
-	position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-.card{
-    display: flex;
-    width: 800px ;
-    height: 395px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    font-family:RotondaC ;
-    padding: 40px 32px 50px 44px;
-    box-sizing: border-box;
-    position: relative;
-    margin-right: 30px;
-}
-
-.card img{
-    margin-right: 35px;
 }
 .card .name{
     font-family:RotondaCBold ;
@@ -301,25 +279,112 @@ section.screen1{
     color: rgb(197, 24, 24) !important;
     
 }
+.all_car{
+    padding: 20px 0px;
+    background: red;
+    margin: 40px auto 60px;
+    width: 370px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    color: white !important;
+    font-size: 20px;
+    line-height: 121%;
+}
 
+.screen3{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #E9E9E9;
+}
+.screen3 .container{
+    z-index: 5;
+    position: relative;
+}
+.screen3 .main{
+    display: flex;
+}
+.imgs{
+    position: relative;
+    width: 742px;
+}
+.imgs img{
+    z-index: -1;
+    position: absolute;
+    top: -100px;
+    left: -170px;
+}
+.girl{
+    top: -205px !important;
+    left: -235px !important;
+}
+
+.screen3 .text{
+    margin-left:0;
+}
+.screen3 .title{
+    font-size: 55px;
+    line-height: 105%;
+    margin: 0;
+    /* or 58px */
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    margin-top: 86px;
+}
+.term{
+    margin: 0;
+    margin-left: 210px;
+    padding: 0px;
+}
+.term li{
+    font-size: 20px;
+    line-height: 110%;
+
+    /* or 22px */
+    letter-spacing: 0.015em;
+    font-family: RotondaC;
+}
+.subtitle{
+    font-family: RotondaC;
+    font-size: 36px;
+    line-height: 110%;
+
+    /* identical to box height, or 40px */
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    margin: 26px 0px 40px 210px;
+}
+.warning{
+    border: 4px solid #E10000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #E10000;
+    padding: 30px 50px;
+    width: 753px;
+    height: 172px;
+    text-align: center;
+    margin: 170px auto 0px;
+}
 /* здесь написан слайдер */
 /* здесь написан слайдер */
 .cards {
 	position: relative;
     width: 100%;
     margin: 20px auto;
+    height: 450px;
 }
 .card{
+    display: flex;
     width: 800px ;
     height: 395px;
     background: #FFFFFF;
     border-radius: 20px;
+    font-family:RotondaC ;
     padding: 40px 32px 50px 44px;
+    box-sizing: border-box;
     position: relative;
     margin-right: 30px;
-    display: flex;
 }
 .card img{
+    margin-right: 35px;
     width: 400px;
     height:300px ;
 }
