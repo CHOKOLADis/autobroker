@@ -11,6 +11,7 @@ body,head{
     padding: 0;
     font-family: RotondaCBold;
     font-style: normal;
+    overflow-x: hidden;
 }
 *{
     transition: .3s all;
@@ -201,6 +202,7 @@ section.screen1{
 }
 .cars_in_db{
     background: #FFDD2E;
+    height: 730px;
 }
 .cars_in_db .title{
     font-family: RotondaCBold;
@@ -214,22 +216,21 @@ section.screen1{
     color: #252423;
 }
 .cards {
-	height: 540px;
-	/* margin: 30px auto 0; */
 	position: relative;
-	/* width: 100%; */
-	/* display: flex; */
+    width: 100%;
+    overflow: hidden;
 }
 .card{
     display: flex;
-    width: 800px;
+    width: 800px ;
     height: 395px;
     background: #FFFFFF;
     border-radius: 20px;
     font-family:RotondaC ;
     padding: 40px 32px 50px 44px;
     box-sizing: border-box;
-	position: relative;
+    position: relative;
+    margin-right: 30px;
 }
 
 .card img{
@@ -303,117 +304,51 @@ section.screen1{
 
 /* здесь написан слайдер */
 /* здесь написан слайдер */
-.slider {
-	height: 400px;
-	overflow: hidden;
+.cards {
 	position: relative;
     width: 100%;
+    margin: 20px auto;
+}
+.card{
+    width: 800px ;
+    height: 395px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px 32px 50px 44px;
+    position: relative;
+    margin-right: 30px;
     display: flex;
 }
-.cards > input {
-	display: none;
+.card img{
+    width: 400px;
+    height:300px ;
 }
-.cards .controls {
-	left: 50%;
-	margin-left: -98px;
+.slick-track{
+    display: flex;
+}
+.slick-slide{
+    display: flex !important;
+    width: 800px !important;
+}
+.slick-dots{
+    position: relative;
+}
+.slick-dots li button::before {
+	font-family: 'slick';
+	font-size: 10px;
+	line-height: 20px;
 	position: absolute;
-}
-
-.cards label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
+	top: 0;
+	left: 0;
+	content: '•';
+    text-align: center;
+    opacity:1; 
+	color: white;
 	border-radius: 50%;
+    background: white;
+    padding: 2px;
 }
-
-.cards label:after {
-	border: 2px solid #ddd;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
+.slick-dots li.slick-active button::before {
+	opacity: 1;
+	color: black;
 }
-.cards label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-transition: background ease-in-out .5s;
-	-moz-transition: background ease-in-out .5s;
-	-o-transition: background ease-in-out .5s;
-	transition: background ease-in-out .5s;
-}
-.cards label:hover, 
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3),
-#slide4:checked ~ .controls label:nth-of-type(4),
-#slide5:checked ~ .controls label:nth-of-type(5) {
-	background: #FFDD2E;
-}
-.card {
-	position: absolute;
-    animation-name: slide;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-@keyframes slide {
-    from {
-     top: 0;
-     left: 0;
-    }
-    12.5% {
-        transform: translate(-250px,0px);
-    }
-    25% {
-        transform: translate(-900px, 0);
-    }
-    36% {
-        transform: translate(-900px,500px);
-    }
-    37% {
-        transform: translate(1950px,500px);
-    }
-    40%{
-        transform: translate(2400px,0px);
-    }
-    87.5% {
-        transform: translate(1550px,0px);
-     
-    }
-    to {
-        transform: translate(550px,0px);
-    }
-   }
-   .slide1 { 
-    animation-delay: 7.5s;
-   }
-   .slide2 { 
-    animation-delay: 5s;
-   }
-   .slide3 { 
-    animation-delay: 2.5s;
-   }
-   .slide4 { 
-    animation-delay: 0s;
-   }
